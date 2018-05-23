@@ -20,36 +20,36 @@ NewSet() Set
 ---
 Append element to s.
 ```go
-s.SetAppend(element)
+s.Append(element)
 ```
 ---
 Remove element from s. If element is not in s, do nothing.
 ```go
-s.SetRemove(element)
+s.Remove(element)
 ```
 ---
 Return ```true``` if theSet and theOtherSet contain the same elements, else returns ```false```.
 
 ```go
-SetEquals(theSet, theOtherSet)
+Equals(theSet, theOtherSet)
 ```
 ---
 
 s -> union of s and otherSet.
 ```go
-s.SetUnion(otherSet) Set
+s.Union(otherSet) Set
 ```
 ---
 
 s -> intersection of s and otherSet.
 ```go
-s.SetIntersection(otherSet)
+s.Intersection(otherSet)
 ```
 ---
 s -> the set containing the elements of s that are not in universe.
 
 ```go
-s.SetRelCompl(universe)
+s.RelCompl(universe)
 ```
 ---
 Return a slice containing all subsets of theSet, including the empty set and Set itself.
@@ -61,7 +61,7 @@ powSet(theSet) []Set
 
 Return the string representation of s.
 ```go
-s.SetString(Set) string
+s.String(Set) string
 ```
 
 ## License:
